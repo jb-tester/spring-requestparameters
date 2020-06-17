@@ -1,0 +1,32 @@
+###
+GET http://localhost:8080/same_url?param1=foo
+
+<> 2020-06-17T094842.200.html
+<> 2020-06-17T094822.200.html
+
+###
+GET http://localhost:8080/same_url?param2=bar
+
+<> 2020-06-17T094845.200.html
+
+###
+GET http://localhost:8080/same_url?param4=boo
+
+<> 2020-06-17T101407.200.html
+<> 2020-06-17T101047.200.html
+<> 2020-06-17T095145.400.json
+<> 2020-06-17T095124.200.html
+
+###
+GET http://localhost:8080/same_url?param1=foo&param2=bar&param3=boo
+
+<> 2020-06-17T101403.200.html
+<> 2020-06-17T101115.200.html
+
+###
+GET http://localhost:8080/same_url?param1=aaa&param2=bbb
+
+<> 2020-06-17T101358.200.html
+<> 2020-06-17T101120.200.html
+
+###
