@@ -1,0 +1,10 @@
+###
+GET http://localhost:8080/some_url2?param23=aaa&param24=bbb&param25=ccc
+
+###
+
+
+###
+GET http://localhost:8080/some_url?param21=foo&param22=bar
+
+###
