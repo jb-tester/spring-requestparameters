@@ -1,0 +1,34 @@
+## @RequestHeader and @RequestParam w/u explicit value/name attributes
+
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- url: "http://localhost:8080"
+  description: Generated server url
+paths:
+  /rest/p1:
+    get:
+      tags:
+      - my-rest-controller
+      operationId: p1
+      parameters:
+      - name: rp1
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: rh1
+        in: header
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+components: {}
