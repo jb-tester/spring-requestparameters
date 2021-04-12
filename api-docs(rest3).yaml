@@ -1,0 +1,36 @@
+## - ResponseStatus
+## - PathVariable with prefix/suffix in the same fragment
+
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- url: "http://localhost:8080"
+  description: Generated server url
+paths:
+  /rest3/p2/foo/*:
+    get:
+      tags:
+      - my-rest-controller-3
+      operationId: p2
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /rest3/p1:
+    get:
+      tags:
+      - my-rest-controller-3
+      operationId: p1
+      responses:
+        "418":
+          description: I'm a teapot
+          content:
+            '*/*':
+              schema:
+                type: string
+components: {}
